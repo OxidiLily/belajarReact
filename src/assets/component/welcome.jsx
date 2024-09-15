@@ -12,7 +12,7 @@ function Welcome() {
                 <div className="flex-wrap pl-10  md:pl-20 lg:pl-36 xl:pl-56 pb-52 mt-10 mx-auto lg:mx-0">
                     <Salam></Salam>
                 </div>
-                <div className="mx-auto">
+                <div className="mx-auto ">
                     <img src={profile} alt="Foto Profile" className="object-contain rounded-b-full sm:min-w-48 lg:min-w-96 h-80 md:h-full w-full mx-auto -mt-40 min-[1920px]:ml-32"/>
                 </div>
             </div>

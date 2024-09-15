@@ -5,8 +5,11 @@ import './index.css'
 function App() {
   return (
     <>
-    <Welcome/>
-    <Project/>
+    <div className='bg-gray-900 mx-auto'>
+      <Welcome/>
+      <Project/>
+    </div>
+    
     </>
   )
 }
