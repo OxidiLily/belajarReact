@@ -8,8 +8,13 @@ function Salam(){
         <p className="text-lg">Web Developer | IT enthusiast</p>
         <p className='text-xl italic'>Python, PHP, Javascript</p>
         <div className="mt-10 grid grid-flow-col auto-cols-max ">
-        <Github/>
-        <Linkedin/>
+        <a href="https://github.com/OxidiLily" target="_blank">
+            <Github/>
+        </a>
+        <a href="https://www.linkedin.com/in/tekadagungn/" target="_blank">
+            <Linkedin/>
+        </a>
+        
         </div>
         </>
     )
