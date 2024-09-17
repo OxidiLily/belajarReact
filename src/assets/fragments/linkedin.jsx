@@ -3,7 +3,7 @@ function Linkedin(){
         <>
             <section className="flex mx-2">
             <button
-                href="/"
+                href="https://www.linkedin.com/in/tekadagungn/"
                 className="group flex justify-center p-2 rounded-md drop-shadow-xl bg-[#0077b5] from-gray-800 text-white font-semibold hover:translate-y-3 hover:rounded-[50%] transition-all duration-500 hover:from-[#331029] hover:to-[#310413]"
             >
                 <svg
