@@ -1,5 +1,5 @@
 import Welcome from './assets/component/welcome'
-import Project from './assets/component/project'
+import Content from './assets/component/content'
 import './index.css'
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
     <>
     <div className='bg-gray-900 mx-auto'>
       <Welcome/>
-      <Project/>
+      <Content/>
     </div>
     
     </>
