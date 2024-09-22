@@ -193,7 +193,7 @@ function Footer(){
                         </a>
                         <button onClick={CloseSosmed} id="btnSosmed" className="group sm:hidden relative inline-block w-[44px] m-[25px]">
                             <span
-                                className="mx-[auto] my-[0] relative top-[12px] h-[6px] bg-white block [transition-property:margin,_width] w-[16px] duration-200 after:absolute after:content-[''] after:mt-[12px] after:w-[30px] after:h-[6px] after:bg-white after:block left-[0] after:[transition-property:margin,_left] after:duration-200 after:mt-[6px] after:-left-[5px] before:absolute before:content-[''] before:-mt-[12px] w-[30px] before:h-[6px] before:bg-white before:block before:left-[0] before:[transition-property:margin,_width,_left] before:duration-200 before:-mt-[6px] before:w-[10px] before:left-[5px]"
+                                className="mx-[auto] my-[0] relative top-[12px] h-[6px] bg-white block [transition-property:margin,_width] w-[20px] duration-200 after:absolute after:content-[''] after:mt-[12px] after:w-[30px] after:h-[6px] after:bg-white after:block left-[0] after:[transition-property:margin,_left] after:duration-200 after:mt-[6px] after:-left-[5px] before:absolute before:content-[''] before:-mt-[12px] w-[20px] before:h-[6px] before:bg-white before:block before:left-[0] before:[transition-property:margin,_width,_left] before:duration-200 before:-mt-[6px] before:w-[10px] before:left-[5px]"
                             ></span>
                         </button>
                     </div>
