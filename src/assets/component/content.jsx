@@ -1,5 +1,4 @@
 import Content from "../fragments/project"
-import Footer from "../fragments/footer"
 import Content2 from "../fragments/project2";
 
 function Project(){
@@ -72,9 +71,6 @@ function Project(){
                     </button>
                 </div>
             </div>
-        </div>
-        <div>
-           <Footer/>
         </div>
         </>
     )

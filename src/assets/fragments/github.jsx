@@ -1,7 +1,7 @@
 function Github(){
     return(
         <>
-        <section className="flex mt-2 ml-7 sm:ml-0 sm:mt-0 sm:mx-2">
+        <section className="flex mt-2 sm:ml-0 sm:mt-0 sm:mx-2">
             <button
                 className="group flex justify-center p-2 rounded-md drop-shadow-xl bg-gradient-to-r from-gray-800 to-black text-white font-semibold hover:translate-y-3 hover:rounded-[50%] transition-all duration-500 hover:from-[#331029] hover:to-[#310413]"
                 href="https://github.com/OxidiLily"

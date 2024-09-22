@@ -1,5 +1,6 @@
 import Welcome from './assets/component/welcome'
 import Content from './assets/component/content'
+import Footer from './assets/component/footer'
 import './index.css'
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <div className='bg-gray-900 mx-auto'>
       <Welcome/>
       <Content/>
+      <Footer/>
     </div>
     
     </>

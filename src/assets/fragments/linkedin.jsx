@@ -1,7 +1,7 @@
 function Linkedin(){
     return(
         <>
-            <section className="flex mt-2 ml-7 sm:ml-0 sm:mt-0 sm:mx-2">
+        <section className="flex mt-2 sm:ml-0 sm:mt-0 sm:mx-2">
             <button
                 href="https://www.linkedin.com/in/tekadagungn/"
                 className="group flex justify-center p-2 rounded-md drop-shadow-xl bg-[#0077b5] from-gray-800 text-white font-semibold hover:translate-y-3 hover:rounded-[50%] transition-all duration-500 hover:from-[#331029] hover:to-[#310413]"
@@ -26,7 +26,7 @@ function Linkedin(){
                 Linkedin
                 </span>
             </button>
-            </section>
+        </section>
         </>
     )
 }
