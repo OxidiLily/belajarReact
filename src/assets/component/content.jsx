@@ -29,7 +29,7 @@ function Project(){
         className="flex justify-center text-center bg-gray-900 text-white text-5xl font-semibold mt-20"
         initial={{ opacity: 0, y: -120 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}>
+        transition={{ duration: 2 }}>
         PROJECT
         </motion.p>
         <motion.div
