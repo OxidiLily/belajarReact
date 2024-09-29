@@ -4,7 +4,10 @@ import Linkedin from "../fragments/linkedin"
 import Spotify from "../fragments/spotify"
 import YouTube from "../fragments/youtube"
 import logo from "/logo.png"
+import { motion } from 'framer-motion';
+import { useScroll } from "framer-motion";
 function Footer(){
+    const { scrollYProgress } = useScroll();
     const Sosmed=()=>{
         const element = document.getElementById("sosmed");
         const btn = document.getElementById("btnSosmed");
@@ -13,7 +16,7 @@ function Footer(){
             btn.classList.add("hidden")
         }
         
-    }
+    };
     const CloseSosmed=()=>{
         const element = document.getElementById("sosmed");
         const btn = document.getElementById("btnSosmed");
@@ -21,15 +24,19 @@ function Footer(){
             element.classList.add("hidden");
             btn.classList.remove("hidden")
         }
-    }
+    };
     return(
         <>
             <div className="text-white p-4 flex justify-between items-center mt-20">
                 <div className="ml-1 flex ">
-                    <div className="grid grid-flow-col auto-cols-max">
+                    <motion.div 
+                    className="grid grid-flow-col auto-cols-max"
+                    initial={{ opacity: 0, x: -100 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.5 }}>
                         <img src={logo} alt="Logo" className="w-14 pt-9" />
                         <p className="pt-12 ml-1 font-bold">Tekad Agung Nugroho</p>
-                    </div>
+                    </motion.div>
                 </div>
                 <div className="mr-1 text-white">
                     <button onClick={Sosmed} id="btnSosmed" className="group sm:hidden relative inline-block w-[44px] p-[5px] h-[45px] m-[25px] pt-5">
@@ -38,11 +45,21 @@ function Footer(){
                         ></span>
                     </button>
                     <div className="mt-10 hidden sm:grid grid-cols-1 sm:grid-flow-col auto-cols-max justify-end" id="sosmed">   
-                        <a href="https://open.spotify.com/playlist/0nmFlvq7hlQ9ZJuWeVLYEa?si=4a05f9fb73734494" target="_blank">
-                            <div className="hidden sm:flex">
+                        <a href="https://open.spotify.com/playlist/0nmFlvq7hlQ9ZJuWeVLYEa?si=4a05f9fb73734494" 
+                        target="_blank">
+                            <motion.div 
+                            className="hidden sm:flex"
+                            initial={{ opacity: 0, y: -40 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.5 }}
+                            >
                                 <Spotify/>
-                            </div>
-                            <section className="flex mb-2 ml-7 sm:ml-0 sm:mb-0 sm:mx-2 sm:hidden">
+                            </motion.div>
+                            <motion.section 
+                            className="flex mb-2 ml-7 sm:ml-0 sm:mb-0 sm:mx-2 sm:hidden"
+                            initial={{ opacity: 0, x: -40 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 0.5 }}>
                                 <button
                                     href="/"
                                     className="group flex justify-center px-2.5 py-2 rounded-md drop-shadow-xl bg-[#1ED760] from-gray-800 to-black text-white font-semibold hover:translate-x-3 hover:rounded-[50%] transition-all duration-500 hover:from-[#331029] hover:to-[#310413]"
@@ -66,13 +83,21 @@ function Footer(){
                                     Spotify
                                     </span>
                                 </button>
-                            </section>
+                            </motion.section>
                         </a>
                         <a href="https://www.youtube.com/@OxidiLily" target="_blank">
-                            <div className="hidden sm:flex">
+                            <motion.div 
+                            className="hidden sm:flex"
+                            initial={{ opacity: 0, y: -60 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 1 }}>
                                 <YouTube/>
-                            </div>
-                            <section className="flex mt-2 ml-7 sm:ml-0 sm:mt-0 sm:mx-2 sm:hidden">
+                            </motion.div>
+                            <motion.section 
+                            className="flex mt-2 ml-7 sm:ml-0 sm:mt-0 sm:mx-2 sm:hidden"
+                            initial={{ opacity: 0, x: -60 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 1 }}>
                                 <button
                                     href="/"
                                     className="group flex justify-center px-2.5 py-2 rounded-md drop-shadow-xl bg-[#CD201F] from-gray-800 text-white font-semibold hover:translate-x-3 hover:rounded-[50%] transition-all duration-500 hover:from-[#331029] hover:to-[#310413]"
@@ -96,13 +121,21 @@ function Footer(){
                                     Youtube
                                     </span>
                                 </button>
-                            </section>
+                            </motion.section>
                         </a>
                         <a href="https://www.instagram.com/tekadagungn/" target="_blank">
-                            <div className="hidden sm:flex">
+                            <motion.div 
+                            className="hidden sm:flex"
+                            initial={{ opacity: 0, y: -80 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 1.5 }}>
                                 <Instagram/>
-                            </div>
-                            <section className="flex mt-2 ml-7 sm:ml-0 sm:mt-0 sm:mx-2 sm:hidden">
+                            </motion.div>
+                            <motion.section 
+                            className="flex mt-2 ml-7 sm:ml-0 sm:mt-0 sm:mx-2 sm:hidden"
+                            initial={{ opacity: 0, x: -80 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 1.5 }}>
                                 <button
                                     href="/"
                                     className="group flex justify-center p-2 rounded-md drop-shadow-xl from-gray-800 bg-[#a21caf] text-white font-semibold hover:translate-x-3 hover:rounded-[50%] transition-all duration-500 hover:from-[#331029] hover:to-[#310413]"
@@ -122,18 +155,26 @@ function Footer(){
                                     ></path>
                                     </svg>
                                     <span
-                                    className="absolute opacity-0 group-hover:opacity-100 group-hover:text-gray-100 group-hover:text-sm group-hover:-translate-x-14 duration-700"
+                                    className="absolute opacity-0 group-hover:opacity-100 group-hover:text-gray-100 group-hover:text-sm group-hover:-translate-x-16 duration-700"
                                     >
                                     Instagram
                                     </span>
                                 </button>
-                            </section>
+                            </motion.section>
                         </a>
                         <a href="https://github.com/OxidiLily" target="_blank">
-                            <div className="hidden sm:flex">
+                            <motion.div 
+                            className="hidden sm:flex"
+                            initial={{ opacity: 0, y: -100 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 2 }}>
                                 <Github/>
-                            </div>
-                            <section className="flex mt-2 ml-7 sm:ml-0 sm:mt-0 sm:mx-2 sm:hidden">
+                            </motion.div>
+                            <motion.section 
+                            className="flex mt-2 ml-7 sm:ml-0 sm:mt-0 sm:mx-2 sm:hidden"
+                            initial={{ opacity: 0, x: -100 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 2 }}>
                                 <button
                                     className="group flex justify-center p-2 rounded-md drop-shadow-xl bg-gradient-to-r from-gray-800 to-black text-white font-semibold hover:translate-x-3 hover:rounded-[50%] transition-all duration-500 hover:from-[#331029] hover:to-[#310413]"
                                     href="https://github.com/OxidiLily"
@@ -158,13 +199,21 @@ function Footer(){
                                     GitHub
                                     </span>
                                 </button>
-                            </section>
+                            </motion.section>
                         </a>
                         <a href="https://www.linkedin.com/in/tekadagungn/" target="_blank">
-                            <div className="hidden sm:flex">
+                            <motion.div 
+                            className="hidden sm:flex"
+                            initial={{ opacity: 0, y: -120 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 2.5 }}>
                                 <Linkedin/>
-                            </div>
-                            <section className="flex mt-2 ml-7 sm:ml-0 sm:mt-0 sm:mx-2 sm:hidden">
+                            </motion.div>
+                            <motion.section 
+                            className="flex mt-2 ml-7 sm:ml-0 sm:mt-0 sm:mx-2 sm:hidden"
+                            initial={{ opacity: 0, x: -120 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 2.5 }}>
                                 <button
                                     href="https://www.linkedin.com/in/tekadagungn/"
                                     className="group flex justify-center p-2 rounded-md drop-shadow-xl bg-[#0077b5] from-gray-800 text-white font-semibold hover:translate-x-3 hover:rounded-[50%] transition-all duration-500 hover:from-[#331029] hover:to-[#310413]"
@@ -189,7 +238,7 @@ function Footer(){
                                     Linkedin
                                     </span>
                                 </button>
-                            </section>
+                            </motion.section>
                         </a>
                         <button onClick={CloseSosmed} id="btnSosmed" className="group sm:hidden relative inline-block w-[44px] m-[25px]">
                             <span
@@ -198,8 +247,6 @@ function Footer(){
                         </button>
                     </div>
                 </div>
-                
-
             </div>
         </>
     )
