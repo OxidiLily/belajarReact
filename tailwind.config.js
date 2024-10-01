@@ -8,4 +8,13 @@ export default {
         extend: {},
     },
     plugins: [],
-}
+    keyframes: {
+        typing: {
+            '0%': { width: '0ch' },
+            '100%': { width: '100%' },
+        },
+    },
+    animations: {
+        typing: 'typing 1s steps(40, end) infinite',
+    },
+};

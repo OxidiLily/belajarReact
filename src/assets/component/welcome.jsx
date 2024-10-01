@@ -1,29 +1,13 @@
 import Salam from '../fragments/salam'
 import profile from '../../images/profile.png'
-import Time from '../fragments/time'
-import Date from '../fragments/date'
 import { motion } from 'framer-motion';
-
 const Welcome = () => {
     return (
         <>
-        <motion.div 
-            className="text-white p-4 flex justify-between items-center"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-        >
-            <div className="ml-1">
-                <Time/>
-            </div>
-            <div className="mr-1 text-white">
-                <Date/>
-            </div>
-        </motion.div>
         <div className="bg-gray-900 relative items-center justify-center w-full h-auto pt-1 md:pt-56">
             <div className="flex-nowrap md:flex md:grid-flow-col auto-cols-max gap-4 justify-start text-white">
                 <motion.div 
-                    className="flex-wrap pl-10 md:pl-20 lg:pl-36 xl:pl-56 pb-52 mt-10 mx-auto lg:mx-0"
+                    className="flex-wrap pl-10 md:pl-20 lg:pl-36 xl:pl-56 pb-52  mt-10 mx-auto lg:mx-0"
                     initial={{ opacity: 0, x: -100 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.9 }}

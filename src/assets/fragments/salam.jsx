@@ -50,10 +50,7 @@ const Salam = () => {
 				Tekad Agung Nugroho
 			</motion.p>
 			<motion.p variants={itemVariants} className="text-lg">
-				Web Developer | IT enthusiast
-			</motion.p>
-			<motion.p variants={itemVariants} className='text-xl italic'>
-				Python, PHP, Javascript
+				IT Enthusiast
 			</motion.p>
 			<div 
 				className="mt-10 grid grid-flow-col auto-cols-max"

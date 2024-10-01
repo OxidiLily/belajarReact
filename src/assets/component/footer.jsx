@@ -15,6 +15,10 @@ function Footer(){
             element.classList.remove("hidden");
             btn.classList.add("hidden")
         }
+        else{
+            element.classList.add("hidden");
+            btn.classList.remove("hidden")
+        }
         
     };
     const CloseSosmed=()=>{
