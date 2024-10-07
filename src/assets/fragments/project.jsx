@@ -8,7 +8,7 @@ function Content (){
             <div>
                 <div className="relative flex w-80 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
                     <div className="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r from-blue-500 to-blue-600">
-                        <a href="https://chatbotgemini-oxidilily.streamlit.app/" target="_blank">
+                        <a href="https://www.youtube.com/watch?v=tjcR52JDZOI" target="_blank">
                             <img src={chatbot} alt="ChatBot" className="relative object-fit h-40" />
                         </a>
                     </div>
@@ -57,10 +57,10 @@ function Content (){
                     </div>
                 </div>
             </div>
-            <div className="hidden lg:flex mt-8 lg:mt-0 mx-auto">
+            <div className="hidden lg:flex sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-8 lg:mt-0 mx-auto">
                 <div className="relative flex w-80 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
                     <div className="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r from-blue-500 to-blue-600">
-                        <a href="https://drive.google.com/drive/u/1/folders/1wixWhWZ6iUU6E7PsirHNUNV8E0XAxcIB">
+                        <a href="https://drive.google.com/drive/u/1/folders/1wixWhWZ6iUU6E7PsirHNUNV8E0XAxcIB" target="_blank">
                         <img src={ar} alt="Ar" className="relative object-fit h-40" />
                         </a>                    
                     </div>
@@ -75,7 +75,7 @@ function Content (){
                         </p>
                     </div>
                     <div className="p-6 pt-0">
-                        <a href="https://drive.google.com/drive/u/1/folders/1wixWhWZ6iUU6E7PsirHNUNV8E0XAxcIB">
+                        <a href="https://drive.google.com/drive/u/1/folders/1wixWhWZ6iUU6E7PsirHNUNV8E0XAxcIB" target="_blank">
                             <button data-ripple-light="true" type="button" className="select-none rounded-lg bg-blue-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none hover:animate-bounce">
                             Go
                             </button>

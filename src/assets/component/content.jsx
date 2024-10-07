@@ -83,8 +83,7 @@ function Project() {
             className="overflow-hidden flex items-center justify-center w-32 p-2 h-12 bg-black text-white border-none rounded-md text-xl font-bold cursor-pointer relative z-10 group"
             initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-          >
+            transition={{ duration: 0.5 }}>
             Show
             <span
               className="absolute w-36 h-32 -top-8 -left-2 bg-sky-200 rotate-12 transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-500 duration-1000 origin-right"
@@ -105,8 +104,7 @@ function Project() {
             animate={controls}
             initial={{ opacity: 0, y: -50 }}
             className="hidden"
-            id="content"
-          >
+            id="content">
             <Content2 />
             <div className="flex items-center pt-10 justify-center bg-gray-900">
               <motion.button
