@@ -2,7 +2,7 @@ FROM node:22-alpine
 
 WORKDIR /appProfile
 
-COPY package* .
+COPY package* /
 
 RUN npm i
 
