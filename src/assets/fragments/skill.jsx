@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 const Skill =()=>{
     return(
         <>
-        <div className="flex justify-center mt-40 sm:mt-0 mx-auto">
+        <div className="flex justify-center mt-10 sm:mt-0 mx-auto">
             <aside className="bg-gray-900 text-white font-mono mx-auto">
             <div className="mt-4">
                 <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 grid-rows-1 gap-4 mx-auto py-5 justify-center items-center ">
