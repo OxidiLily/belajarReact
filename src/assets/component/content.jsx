@@ -1,5 +1,6 @@
 import Content from "../fragments/project";
 import Content2 from "../fragments/project2";
+import Map from "../fragments/map";
 import { motion, useAnimation } from 'framer-motion';
 import Skill from "../fragments/skill";
 function Project() {
@@ -132,8 +133,23 @@ function Project() {
               </motion.button>
             </div>
           </motion.div>
+          
         </div>
+        
       </motion.div>
+      
+      <div className="mt-36">
+        <motion.p
+          className="flex justify-center text-center bg-gray-900 text-white text-5xl font-semibold mb-10"
+          initial={{ opacity: 0, y: -100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 2 }}
+        >
+          DOMISILI
+        </motion.p>
+        <Map />
+      </div>
+      
     </>
   );
 }
