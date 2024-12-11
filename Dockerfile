@@ -8,8 +8,6 @@ RUN npm i
 
 COPY . .
 
-RUN npm audit
-
 RUN npm audit fix
 
 RUN npm run build
