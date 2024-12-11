@@ -8,11 +8,11 @@ RUN npm i
 
 COPY . .
 
-RUN npm run build
-
 RUN npm audit
 
 RUN npm audit fix
+
+RUN npm run build
 
 EXPOSE 8001
 
