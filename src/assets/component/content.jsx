@@ -147,7 +147,13 @@ function Project() {
         >
           DOMISILI
         </motion.p>
-        <Map />
+          <motion.div 
+            className="flex justify-center text-center bg-gray-900 text-white text-5xl font-semibold mb-10"
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 2 }}>
+          <Map />
+        </motion.div>
       </div>
       
     </>
