@@ -4,8 +4,8 @@ import botDiscord from "../../images/discord.png"
 function Content2 (){
     return (
         <>
-        <section className="grid grid-cols-1 sm:flex-wrap sm:grid-cols-2 lg:grid-cols-3 gap-5 mx-2 py-5">
-            <div className="lg:hidden -mt-8 lg:mt-0 mx-auto">
+        <section className="grid grid-cols-1 sm:flex-wrap md:grid-cols-2 lg:grid-cols-3 gap-5 mx-2 py-5">
+            <div className="lg:hidden -mt-5 md:mt-0 lg:mt-0 mx-auto">
                 <div className="relative flex w-80 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
                     <div className="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r from-blue-500 to-blue-600">
                         <a href="https://drive.google.com/drive/u/1/folders/1wixWhWZ6iUU6E7PsirHNUNV8E0XAxcIB" target="_blank">
@@ -31,7 +31,7 @@ function Content2 (){
                     </div>
                 </div>
             </div>
-            <div className="lg:flex mt-8 sm:-mt-8 lg:mt-0 mx-auto">
+            <div className="lg:flex mt-8 sm:mt-10 md:mt-0 lg:mt-0 mx-auto">
                 <div className="relative flex w-80 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
                     <div className="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r from-blue-500 to-blue-600">
                     <a href="https://www.youtube.com/watch?v=wTdSax0OuPM" target="_blank">
@@ -57,7 +57,7 @@ function Content2 (){
                     </div>
                 </div>
             </div>    
-            <div className="lg:flex mt-8 sm:mt-8 lg:mt-0 mx-auto">
+            <div className="lg:flex mt-8 sm:mt-10 md:mt-10 lg:mt-0 mx-auto">
                 <div className="relative flex w-80 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
                     <div className="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r from-blue-500 to-blue-600">
                     <a href="https://www.youtube.com/watch?v=uvBzi1TqkSs" target="_blank">

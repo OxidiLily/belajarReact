@@ -1,9 +1,8 @@
 import React from 'react';
-import pdf from '../../pdf/CV_Tekad Agung Nugroho.pdf'
 const Downloads = () => {
   const downloadPDF = () => {
     const link = document.createElement('a');
-    link.href = pdf; // Path ke file PDF
+    link.href = 'https://drive.google.com/uc?export=download&id=1Hx9-4-K2VWLWPY-KTTG_umJgUP0Jy9-K'; // Path ke file Google Drive
     link.setAttribute('download', 'CV_Tekad Agung Nugroho.pdf'); // Nama file saat diunduh
     document.body.appendChild(link);
     link.click();

@@ -145,15 +145,74 @@ function Project() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 2 }}
         >
-          DOMISILI
+          Contact
         </motion.p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 mx-0">
+          <div className="grid my-auto mx-auto w-full">
+            <motion.a href="mailto:contactme@oxidilily.my.id"
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1 }}>
+              <div
+                class="mt-5 md:mx-6 mx-4 max-w-full pr-20 sm:px-0 overflow-hidden bg-white border border-gray-200 rounded-xl shadow-md transform transition-all duration-500 hover:shadow-lg hover:scale-105 relative group"
+              >
+                <div
+                  class="absolute inset-0 bg-gradient-to-br from-gray-100 to-white opacity-0 transition-opacity duration-500 group-hover:opacity-30 blur-md"
+                ></div>
+                <div class="p-6 relative z-10">
+                  <p class="text-xl font-semibold text-gray-800">Email</p>
+                  <p class="mt-2 text-gray-600">
+                  contactme@oxidilily.my.id
+                  </p>
+                </div>
+              </div>
+            </motion.a>
+            <motion.a href="https://discord.com/" target="_blank"
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1.5 }}>
+              <div
+              class="my-5 md:mx-6 mx-4 max-w-full pr-20 sm:px-0 overflow-hidden bg-white border border-gray-200 rounded-xl shadow-md transform transition-all duration-500 hover:shadow-lg hover:scale-105 relative group"
+              >
+                <div
+                  class="absolute inset-0 bg-gradient-to-br from-gray-100 to-white opacity-0 transition-opacity duration-500 group-hover:opacity-30 blur-md"
+                ></div>
+                <div class="p-6 relative z-10">
+                  <p class="text-xl font-semibold text-gray-800">Discord</p>
+                  <p class="mt-2 text-gray-600">
+                  oxidilily
+                  </p>
+                </div>
+              </div>
+            </motion.a>
+            <motion.a href="https://t.me/OxidiLily" target="_blank"
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 2 }}>
+              <div
+              class="mx-4 md:mx-6 mb-5 max-w-full pr-20 sm:px-0 overflow-hidden bg-white border border-gray-200 rounded-xl shadow-md transform transition-all duration-500 hover:shadow-lg hover:scale-105 relative group"
+              >
+                <div
+                  class="absolute inset-0 bg-gradient-to-br from-gray-100 to-white opacity-0 transition-opacity duration-500 group-hover:opacity-30 blur-md"
+                ></div>
+                <div class="p-6 relative z-10">
+                  <p class="text-xl font-semibold text-gray-800">Telegram</p>
+                  <p class="mt-2 text-gray-600">
+                  OxidiLily
+                  </p>
+                </div>
+              </div>
+            </motion.a>
+          </div>
+          
           <motion.div 
-            className="flex justify-center text-center bg-gray-900 text-white text-5xl font-semibold mb-10"
+            className="float-right bg-gray-900 mb-10 mt-5 sm:h-1/2 md:mt-20 mx-6 "
             initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 2 }}>
           <Map />
         </motion.div>
+        </div>
       </div>
       
     </>
