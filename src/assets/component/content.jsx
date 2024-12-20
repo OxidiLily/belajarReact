@@ -156,7 +156,7 @@ function Project() {
             target="_blank"
             rel="noopener noreferrer">
               <div
-                class="mt-5 md:mx-6 mx-4 max-w-full pr-20 sm:px-0 overflow-hidden bg-white border border-gray-200 rounded-xl shadow-md transform transition-all duration-500 hover:shadow-lg hover:scale-105 relative group"
+                class="mt-5 lg:mt-0 md:mx-6 mx-4 max-w-full pr-20 sm:px-0 overflow-hidden bg-white border border-gray-200 rounded-xl shadow-md transform transition-all duration-500 hover:shadow-lg hover:scale-105 relative group"
               >
                 <div
                   class="absolute inset-0 bg-gradient-to-br from-gray-100 to-white opacity-0 transition-opacity duration-500 group-hover:opacity-30 blur-md"
@@ -208,7 +208,7 @@ function Project() {
           </div>
           
           <motion.div 
-            className="float-right bg-gray-900 mb-10 mt-5 sm:h-1/2 md:mt-20 mx-6 "
+            className="float-right bg-gray-900 mb-10 mt-5 sm:h-1/2 md:mt-20 lg:mt-0 mx-6 "
             initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 2 }}>
