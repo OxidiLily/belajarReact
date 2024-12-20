@@ -149,10 +149,12 @@ function Project() {
         </motion.p>
         <div className="grid grid-cols-1 sm:grid-cols-2 mx-0">
           <div className="grid my-auto mx-auto w-full">
-            <motion.a href="mailto:contactme@oxidilily.my.id"
+            <motion.a href="https://mail.google.com/mail/?view=cm&fs=1&to=contactme@oxidilily.my.id"
             initial={{ opacity: 0, x: -100 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1 }}>
+            transition={{ duration: 1 }}
+            target="_blank"
+            rel="noopener noreferrer">
               <div
                 class="mt-5 md:mx-6 mx-4 max-w-full pr-20 sm:px-0 overflow-hidden bg-white border border-gray-200 rounded-xl shadow-md transform transition-all duration-500 hover:shadow-lg hover:scale-105 relative group"
               >
