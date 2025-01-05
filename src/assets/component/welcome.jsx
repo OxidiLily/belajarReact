@@ -1,7 +1,7 @@
 import Salam from '../fragments/salam'
 import profile from '../../images/profile.png'
 import { motion } from 'framer-motion';
-import Cv from '../fragments/downloadcv'
+// import Cv from '../fragments/downloadcv'
 const Welcome = () => {
     return (
         <>
@@ -15,14 +15,14 @@ const Welcome = () => {
                     viewport={{ once: false, amount: 0.3 }}
                 >
                     <Salam/>
-                    <motion.div
+                    {/* <motion.div
                         initial={{ opacity: 0, y: -100 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1 }}
                         viewport={{ once: false, amount: 0.3 }}
                     >
                         <Cv/>
-                    </motion.div>
+                    </motion.div> */}
                     
                 </motion.div>
                 <motion.div 
