@@ -14,6 +14,8 @@ export default defineConfig({
         port: 8001,
         // Jika port 8001 sudah dipakai, akan error (tidak mencari port lain)
         strictPort: true
+
+        allowedHosts: ['www.oxidilily.my.id','oxidilily.my.id']
     },
 
     // Konfigurasi development server
