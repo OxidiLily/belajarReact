@@ -13,7 +13,7 @@ export default defineConfig({
         // Menggunakan port 8001 untuk preview server
         port: 8001,
         // Jika port 8001 sudah dipakai, akan error (tidak mencari port lain)
-        strictPort: true
+        strictPort: true,
 
         allowedHosts: ['www.oxidilily.my.id','oxidilily.my.id']
     },
