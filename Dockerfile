@@ -8,7 +8,7 @@ RUN npm i
 
 COPY . .
 
-RUN npm audit fix
+RUN npm audit fix --force
 
 RUN npm run build
 
